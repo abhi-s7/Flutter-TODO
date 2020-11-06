@@ -1,0 +1,43 @@
+Most Famous Architecture - MVC
+Model View Controller
+Firsly popularized by Apple for developing IOS Apps
+
+Model - Manages Data & Logic
+View - what goes on Screen i.e. User Interface
+Controller - Middleware b/w Model and View
+
+Imperative VS. Reactive Programming
+eg. Boss tells everything to employee what to do 
+
+While Reactive programmer knows work and its task to do 
+And it not commanded by middle person what to do what not to do
+
+Types of state management
+
+    setState
+    BloC
+    Scoped Model
+    Provider
+    Redux 
+    MobX
+    Lifting State Up
+    MVC
+    InheritedWidget
+
+These are requirement based as they are better according to the type of need of Apps
+
+Another thing to look while choosing Architectural Patterns is 
+
+Style Based
+Also Maturity Based i.e. people works out on making decision about the best method for managing state
+
+Currently best method is to use Provider Package as of 2020
+
+
+Solution : Provider Package - A wrapper around InheritedWidget to make them easier to use and more reusable.
+Move the state of Level3 to the Top
+then we can have widgets which subsribe to the state
+Now Level3 will listen to any changes in state and it will be notified when changed
+Thus data won't be passed through non-required levels 
+It simply only passes the data to level 3 widget which actually cares for theis updated state 
+instead of rebuiling level1 level2 and then level3
